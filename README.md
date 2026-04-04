@@ -1,5 +1,5 @@
 # ComfyNord
-Fixes to Iona's (https://github.com/eeonaa) ComfyNord css for [krunker.io](https://krunker.io/)
+Fixes to [Iona's](https://github.com/eeonaa) ComfyNord css for [krunker.io](https://krunker.io/)
 
 For questions contact me on discord at urname2162 ig
 
