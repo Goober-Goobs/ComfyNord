@@ -53,7 +53,7 @@ tbody>tr>td {
 
 /* MARKET AND TURF WARS BUTTONS */
 
-/* make containers transparent */
+/* reshaping container */
 div.main-menu-button-container:nth-child(1),
 div.main-menu-button-container:nth-child(2) {
     background: transparent !important;
@@ -63,29 +63,22 @@ div.main-menu-button-container:nth-child(2) {
     height: 50px !important;
     padding: 0 !important;
     display: block !important; 
-}
-
-/* positioning - raise by 60 for glorp*/
-div.main-menu-button-container:nth-child(1) {
-    top: auto !important;   /* cancel out top */
-    left: auto !important;  /* canel out left */
-    
-    bottom: 700px !important; 
-    right: 20px !important;   
-    
-    position: absolute !important;
-    z-index: 10 !important; 
-}
-
-div.main-menu-button-container:nth-child(2) {
     top: auto !important;
     left: auto !important;
-    
-    bottom: 630px !important; /* market is 80 below turf */
+}
+
+/* positioning */
+div.main-menu-button-container:nth-child(1) {
+    bottom: 700px !important; 
     right: 20px !important;
-    
     position: absolute !important;
-    z-index: 11 !important; 
+    z-index: 10 !important;
+}
+div.main-menu-button-container:nth-child(2) {
+    bottom: 620px !important; /* market is 80 below turf */
+    right: 20px !important;
+    position: absolute !important;
+    z-index: 11 !important;
 }
 
 /* big background box */

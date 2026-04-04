@@ -1,24 +1,3 @@
-/* Auto Update link */
-@import url(https://iona.quest/import/comfynord.css);
-
-:root {
-    --main-black: black;
-    --main-white: white;
-    --nord-0: #2e3440;
-    --nord-1: #3b4252;
-    --nord-2: #434c5e;
-    --nord-3: #4c566a;
-    --nord-7: #8fbcbb;
-    --nord-8: #88c0d0;
-    --nord-9: #81a1c1;
-    --nord-10:#5e81ac;
-}
-
-@font-face {
-    font-family: gamefont;
-    src: url(https://fonts.gstatic.com/s/rubik/v14/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
-}
-
 /* CSS By iona (eeona on discord)
 Comfy Nord
 
@@ -51,7 +30,7 @@ tbody>tr>td {
 
 /* MARKET AND TURF WARS BUTTONS */
 
-/* make containers transparent */
+/* reshaping container */
 div.main-menu-button-container:nth-child(1),
 div.main-menu-button-container:nth-child(2) {
     background: transparent !important;
@@ -61,29 +40,22 @@ div.main-menu-button-container:nth-child(2) {
     height: 50px !important;
     padding: 0 !important;
     display: block !important; 
+    top: auto !important;
+    left: auto !important;
 }
 
 /* positioning */
 div.main-menu-button-container:nth-child(1) {
-    top: auto !important;   /* cancel out top */
-    left: auto !important;  /* canel out left */
-    
     bottom: 630px !important; 
-    right: 20px !important;   
-    
+    right: 20px !important;
     position: absolute !important;
-    z-index: 10 !important; 
+    z-index: 10 !important;
 }
-
 div.main-menu-button-container:nth-child(2) {
-    top: auto !important;
-    left: auto !important;
-    
     bottom: 560px !important; /* market is 80 below turf */
     right: 20px !important;
-    
     position: absolute !important;
-    z-index: 11 !important; 
+    z-index: 11 !important;
 }
 
 /* big background box */
