@@ -3,6 +3,8 @@
     src: url(https://fonts.gstatic.com/s/rubik/v14/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
 }
 
+/* Iona's original css (some elements don't work because :has is not supprted for electron clients */
+
 :root {
     --main-black: black;
     --main-white: white;
