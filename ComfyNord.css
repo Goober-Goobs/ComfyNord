@@ -1,3 +1,24 @@
+/* Auto Update link */
+@import url(https://iona.quest/import/comfynord.css);
+
+:root {
+    --main-black: black;
+    --main-white: white;
+    --nord-0: #2e3440;
+    --nord-1: #3b4252;
+    --nord-2: #434c5e;
+    --nord-3: #4c566a;
+    --nord-7: #8fbcbb;
+    --nord-8: #88c0d0;
+    --nord-9: #81a1c1;
+    --nord-10:#5e81ac;
+}
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/rubik/v14/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+}
+
 /* CSS By iona (eeona on discord)
 Comfy Nord
 
