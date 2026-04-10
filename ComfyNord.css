@@ -49,6 +49,12 @@ tbody>tr>td {
     text-align: left !important;
 }
 
+#uiBase.onCompMenu #chatHolder {
+    left: 20px;
+    bottom: 150px;
+}
+
+
 /* MARKET AND TURF WARS BUTTONS */
 
 /* reshaping container */
