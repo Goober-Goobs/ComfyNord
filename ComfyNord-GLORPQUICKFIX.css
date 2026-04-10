@@ -19,10 +19,17 @@
     src: url(https://fonts.gstatic.com/s/rubik/v14/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
 }
 
-/* MARKET AND TURF WARS BUTTONS */
 div.main-menu-button-container:nth-child(1) {
     bottom: 700px !important; 
 }
 div.main-menu-button-container:nth-child(2) {
     bottom: 620px !important; /* market is 80 below turf */
 }
+
+/* CSS By iona (eeona on discord)
+Comfy Nord
+
+goobs (urname2162) edits to keep it functional :3
+
+If you wish to make edits, put them below this comment :)
+Hope you enjoy this CSS! */
