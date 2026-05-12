@@ -658,6 +658,11 @@ tbody>tr>td:nth-child(1) {
     bottom: 150px;
 }
 
+#uiBase.onSpect #chatHolder{
+	left: 20px;
+	bottom: 10px;
+}
+
 #chatList {
     background-color: transparent;
     border-radius: 10px;
@@ -1304,7 +1309,9 @@ input:checked+.sliderSml:before {
     color: var(--nord-8) !important;
 }
 
-
+#uiBase.onSpect #bottomLeftHolder, #bottomRight, #topRight {
+	display: none !important;
+}
 
 /* SUB MENU */
 #menuWindow {
@@ -1504,8 +1511,6 @@ input:checked+.sliderSml:before {
 #itemSearchH {
     background-color: transparent;
 }
-
-
 
 /* MARKET AND TURF WARS BUTTONS */
 
