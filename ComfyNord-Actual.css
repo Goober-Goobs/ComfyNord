@@ -1313,6 +1313,10 @@ input:checked+.sliderSml:before {
 	display: none !important;
 }
 
+#uiBase.onGame #bottomRight, #topRight {
+	display: flex !important;
+}
+
 /* SUB MENU */
 #menuWindow {
     background-color: var(--nord-0) !important;
