@@ -600,12 +600,7 @@ tbody>tr>td:nth-child(1) {
     padding-left: 10px;
 }
 
-
-
-
-
 /* CHAT */
-
 #chatHolder {
     width: 330px;
     border: 2px solid var(--nord-1);
@@ -784,14 +779,6 @@ tbody>tr>td:nth-child(1) {
     padding-right: 10px !important;
 }
 
-#signedInHeaderBar>div:first-child {
-    width: 200px;
-    display: grid !important;
-    grid-template-rows: 50px 50px 50px;
-    grid-gap: 5px;
-    margin-left: 170px;
-}
-
 #menuMiniProfilePic {
     position: absolute;
     height: 150px;
@@ -802,25 +789,6 @@ tbody>tr>td:nth-child(1) {
     pointer-events: none;
     margin: 0;
     z-index: 2;
-}
-
-#menuAccountUsername {
-    border: transparent;
-    padding: 0;
-}
-
-#menuAccountUsername:before {
-    content: '';
-    position: absolute;
-    top: 9px;
-    left: 9px;
-    height: 150px;
-    width: 150px;
-    border-radius: 5px;
-    border: 1px solid var(--nord-2);
-    background-color: var(--nord-1);
-    padding: 5px;
-    z-index: 1;
 }
 
 #mailContainer {
@@ -844,7 +812,7 @@ tbody>tr>td:nth-child(1) {
     right: -5px;
     top: -5px;
     width: 30px;
-    height: 30px;
+    height: 20px;
     font-size: 20px;
     background-color: var(--nord-9);
     border: 3px solid var(--nord-2);
@@ -871,64 +839,13 @@ tbody>tr>td:nth-child(1) {
     text-overflow: ellipsis;
 }
 
-#mLevelCont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 22.5px;
-    left: 167px;
-    position: absolute;
-    background-color: transparent;
-    height: 25px;
-
-}
-#mLevelContV {
-    font-size: 20px;
-    line-height: initial;
-}
-
-#menuAccountUsername {
-    margin-left: 60px;
-}
-
-#menuJNKCount,
-#menuKRCount,
-#mLevelCont {
-    display: flex;
-    flex-direction: row-reverse;
-    color: white;
-    border-left: 4px solid var(--nord-8);
-    padding-left: 10px;
-}
-
-#menuJNKCount span,
-#menuKRCount span,
-#mLevelContV {
-    color: var(--nord-10) !important;
-    margin: 0 !important;
-    padding: 0;
-    padding-right: 20px;
-}
-
-.krInfo:hover #menuKRCount,
-.junkInfo:hover #menuJNKCount {
-    text-decoration: none !important;
-}
-
-#mLevelCont {
-    pointer-events: none;
-}
-
-
-
-
-
 /* BOTTOM RIGHT MENUITEMCONTAINER */
 
 #menuItemContainer {
-    top: initial !important;
-    bottom: 10px;
-    left: initial;
+    top: auto !important;
+    bottom: 10px !important;
+	transform:translateY(0) !important;
+    left: auto !important;
     right: 10px;
     position: absolute;
     border: 2px solid var(--nord-1);
@@ -937,7 +854,7 @@ tbody>tr>td:nth-child(1) {
     margin: 0px;
     padding: 10px !important;
     height: auto;
-    width: auto;
+    width: 500px !important;
 }
 
 .menuItem {
@@ -954,6 +871,11 @@ tbody>tr>td:nth-child(1) {
     margin-bottom: 5px;
     padding: 5px;
 }
+
+.menuItemTitle {
+    dipslay: none !important;
+}
+
 .menuItem:first-child {
     margin-top: 0px;
 }
@@ -984,18 +906,15 @@ tbody>tr>td:nth-child(1) {
 	color: var(--nord-8) !important;
 }
 
-
-
-
 /* TOP RIGHT INFO */
 
 #matchInfoHolder {
     position: fixed;
-    width: 200px;
+    width: 200px !important;
     height: 175px;
-    top: 10px;
+    top: 80px;
     right: 10px;
-    left: inherit;
+    left: inherit !important;
     display: grid !important;
     grid-template-columns: 200px;
     grid-template-rows: 50px auto;
@@ -1006,6 +925,11 @@ tbody>tr>td:nth-child(1) {
     margin: 0;
     padding: 10px;
     gap: 10px;
+	padding-right: 20px;
+}
+
+.match-action-sep.svelte-139kw5i{
+	display: none !important;
 }
 
 #menuServerInfoContainer {
@@ -1013,7 +937,7 @@ tbody>tr>td:nth-child(1) {
 }
 
 #menuRegionLabel {
-    width: calc(100% - 27px);
+    width: 175px;
     height: 38px;
     display: flex !important;
     justify-content: center;
@@ -1025,7 +949,7 @@ tbody>tr>td:nth-child(1) {
     padding: 5px;
     padding-right: 20px;
     font-size: 24px !important;
-    margin-bottom: 12.5px;
+	margin-right: -10px; 
 }
 
 #menuRegionLabel::after {
@@ -1083,15 +1007,12 @@ tbody>tr>td:nth-child(1) {
     padding-right: 10px;
 }
 
-
-
-
 /* BOTTOM MID SUBLOGOBUTTONS */
 #subLogoButtons {
     left: initial;
     top: initial;
     bottom: 10px;
-    right: 350px;
+    right: 550px;
     transform: none;
     border: 2px solid var(--nord-1);
     background-color: var(--nord-0);
@@ -1120,12 +1041,6 @@ tbody>tr>td:nth-child(1) {
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 5px !important;
-}
-#menuBtnQuickMatch {
-    margin-top: 0px !important;
-}
-#menuBtnJoin {
-    margin-bottom: 0px !important;
 }
 
 #subLogoButtons>.button::after {
@@ -1170,15 +1085,38 @@ tbody>tr>td:nth-child(1) {
 #menuBtnBrowser::after {
     content: "travel_explore" !important;
 }
-#inviteButton::after {
-    content: "group_add" !important;
-}
-#menuBtnJoin::after {
-    content: "link" !important;
+
+#menuBtnCustomGames::after {
+	content: "construction" !important;
 }
 
+#inviteButton {
+    position: fixed !important;
+    top: 90px;
+    left: 150px;
+    font-size: 26px;
+	opacity: 1;
+    
+    /* Box Styling */
+    background-color: var(--nord-2);
+    border: 10px solid var(--nord-0);
+    border-radius: 5px;
+    padding: 10px 15px;
+} 
 
-
+#menuBtnJoin {
+    position: fixed !important;
+    top: 90px;
+    left: 280px;
+    font-size: 26px;
+	opacity: 1;
+    
+    /* Box Styling */
+    background-color: var(--nord-2);
+    border: 10px solid var(--nord-0);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
 
 /* BOTTOM RIGHT CUSTOMISE BUTTON */
 #menuClassContainer>div:nth-child(7) {
@@ -1187,19 +1125,19 @@ tbody>tr>td:nth-child(1) {
     justify-content: center;
     align-items: flex-end;
     bottom: 0px;
-    right: 440px;
+    right: 920px;
     width: auto;
     height: 145px;
     margin: 0 !important;
     padding: 10px;
     border: 2px solid var(--nord-1);
     background-color: var(--nord-0);
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 #menuClassContainer>div:nth-child(6) {
     position: absolute;
-    right: 452px;
+    right: 932px;
     bottom: 90px;
     z-index: 10;
 }
@@ -1237,12 +1175,9 @@ tbody>tr>td:nth-child(1) {
     text-shadow: none !important;
 }
 
-
-
-
 /* SPECTATE BUTTON */
 #uiBase.onMenu #spectButton {
-    top: 205px;
+    top: 85px;
     left: 47px;
     border: 2px solid var(--nord-1);
     background-color: var(--nord-0);
@@ -1339,9 +1274,6 @@ input:checked+.sliderSml:before {
 #windowHolder.popupWin {
     background-color: transparent !important;
 }
-
-
-
 
 /* CHARACTER CUSTOMISER SCREEN */
 #menuClassContainer {
@@ -1516,122 +1448,3 @@ input:checked+.sliderSml:before {
     background-color: transparent;
 }
 
-/* MARKET AND TURF WARS BUTTONS */
-
-div.main-menu-button-container:nth-child(1),
-div.main-menu-button-container:nth-child(2) {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    width: 200px !important;
-    height: 50px !important;
-    padding: 0 !important;
-    display: block !important; 
-    top: auto !important;
-    left: auto !important;
-}
-
-div.main-menu-button-container:nth-child(1) {
-    bottom: 630px !important; 
-    right: 20px !important;
-    position: absolute !important;
-    z-index: 10 !important;
-}
-div.main-menu-button-container:nth-child(2) {
-    bottom: 560px !important; /* market is 80 below turf */
-    right: 20px !important;
-    position: absolute !important;
-    z-index: 11 !important;
-}
-
-div.main-menu-button-container:nth-child(1)::before {
-    content: "";
-    position: absolute;
-    top: -10px !important;
-    left: -10px !important;
-    width: 220px !important;
-    height: 150px !important;
-    background-color: var(--nord-0) !important;
-    border: 1px solid var(--nord-3) !important;
-    border-radius: 8px !important;
-    z-index: -1 !important;
-    pointer-events: none !important;
-}
-
-div.main-menu-button-container:nth-child(1) .main-menu-button-text,
-div.main-menu-button-container:nth-child(2) .main-menu-button-text {
-
-    display: flex !important;
-    justify-content: flex-end !important;
-    align-items: center !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    
-
-    width: 200px !important;
-    height: 60px !important;
-    box-sizing: border-box !important;
-    border-radius: 6px !important;
-    
-    padding-right: 75px !important;
-    
-    background-color: var(--nord-1) !important;
-    border: 1px solid var(--nord-3) !important;
-    
-
-    font-size: 1.25rem !important;
-    margin: 0 !important;
-    text-shadow: none !important;
-    color: var(--main-white) !important;
-    transform: none !important;
-}
-
-div.main-menu-button-container.svelte-f3amho:hover {
-    transform: none !important; 
-}
-
-div.main-menu-button-container.svelte-f3amho {
-    filter: none !important; 
-}
-
-div.main-menu-button-container:nth-child(1)  .main-menu-button-image-wrapper,
-div.main-menu-button-container:nth-child(2)  .main-menu-button-image-wrapper {
-    display: none !important;
-}
-
-div.main-menu-button-container:nth-child(1) .main-menu-button-text::after {
-    content: "military_tech" !important; /* The name of the icon */
-    font-family: 'Material Symbols Outlined', 'Material Icons' !important; 
-    
-    position: absolute !important;
-    right: 15px !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important; /*center*/
-    
-    font-size: 50px !important;
-    color: var(--nord-10) !important;
-}
-
-div.main-menu-button-container:nth-child(2) .main-menu-button-text::after {
-    content: "shopping_cart" !important; 
-    font-family: 'Material Symbols Outlined', 'Material Icons' !important; 
-    
-    position: absolute !important;
-    right: 15px !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    
-    font-size: 50px !important;
-    color: var(--nord-10) !important;
-}
-
-div.main-menu-button-container:nth-child(1):hover .main-menu-button-text::after,
-div.main-menu-button-container:nth-child(2):hover .main-menu-button-text::after {
-    color: var(--nord-8) !important;
-}
-
-/* Remove leaderboard button */
-.icon-button[title="Leaderboards"] {
-    display: none !important;
-}
