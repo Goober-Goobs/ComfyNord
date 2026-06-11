@@ -1448,3 +1448,7 @@ input:checked+.sliderSml:before {
     background-color: transparent;
 }
 
+//remove krunkCup
+div.krunkCupHolder {
+    display: none !important;
+}
