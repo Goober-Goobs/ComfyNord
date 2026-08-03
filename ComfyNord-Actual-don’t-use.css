@@ -335,7 +335,7 @@ tbody>tr>td:nth-child(1) {
 }
 
 #ammoHolder {
-    background-image: url(https://iona.quest/import/assets/NordComfy/ammo.png);
+    background-image: linear-gradient(var(--nord-8),var(--nord-8));
     background-color: var(--nord-1);
     border: 5px solid var(--nord-1);
     box-shadow: 0 0 0 1px var(--nord-2);
@@ -841,6 +841,16 @@ tbody>tr>td:nth-child(1) {
 
 /* BOTTOM RIGHT MENUITEMCONTAINER */
 
+#menuItemContainer > .sidebarDivider {
+    display: none !important;
+}
+
+#menuItemContainer .menuItemIcon {
+	font-size: 48px !important;
+    transform: translate(5px, -13px);
+	color: var(--nord-10)
+}
+
 #menuItemContainer {
     top: auto !important;
     bottom: 10px !important;
@@ -854,12 +864,11 @@ tbody>tr>td:nth-child(1) {
     margin: 0px;
     padding: 10px !important;
     height: auto;
-    width: 500px !important;
+    width: 60px !important;
 }
 
 .menuItem {
     height: 50px;
-    font-size: 20px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -867,38 +876,31 @@ tbody>tr>td:nth-child(1) {
     border: 1px solid var(--nord-2);
     background-color: var(--nord-1);
     border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
 }
 
-.menuItemTitle {
-    dipslay: none !important;
+.menuItem > span {
+	font-size: 28;
 }
+
 
 .menuItem:first-child {
     margin-top: 0px;
 }
-.menuItem:nth-child(8) {
-    margin-bottom: 0px;
+
+.menuItem.bpItem.svelte-159x57l, #dailySpinDiv.menuItem {
+	display: none;
 }
-.menuItem:last-child {
-    display: none !important;
-}
+
 
 .menBtnIcn {
     color: var(--nord-10) !important;
 }
 
 .menuItemTitle {
-    margin-top: 0 !important;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px !important;
+	display: none;
 }
 
 .menuItem:hover .menBtnIcn {
-	transform: scale(1);
 	color: var(--nord-8) !important;
 }
 .menuItem:active .menBtnIcn {
@@ -1012,7 +1014,7 @@ tbody>tr>td:nth-child(1) {
     left: initial;
     top: initial;
     bottom: 10px;
-    right: 550px;
+    right: 100px;
     transform: none;
     border: 2px solid var(--nord-1);
     background-color: var(--nord-0);
@@ -1125,7 +1127,7 @@ tbody>tr>td:nth-child(1) {
     justify-content: center;
     align-items: flex-end;
     bottom: 0px;
-    right: 920px;
+    right: 190px;
     width: auto;
     height: 145px;
     margin: 0 !important;
@@ -1137,7 +1139,7 @@ tbody>tr>td:nth-child(1) {
 
 #menuClassContainer>div:nth-child(6) {
     position: absolute;
-    right: 932px;
+    right: 202px;
     bottom: 90px;
     z-index: 10;
 }
@@ -1279,6 +1281,7 @@ input:checked+.sliderSml:before {
 #menuClassContainer {
     right: 10px;
     bottom: 10px;
+	transform: scale(1)
 }
 
 #classPreviewCanvas {
@@ -1447,4 +1450,3 @@ input:checked+.sliderSml:before {
 #itemSearchH {
     background-color: transparent;
 }
-
